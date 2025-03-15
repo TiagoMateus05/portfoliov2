@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Your existing CSS */
+@font-face {
+  font-family: 'Cascade Mono';
+  src: url('/fonts/CascadeMono.woff2') format('woff2'),
+       url('/fonts/CascadeMono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.default {
+  color: white;
+  font-family: 'Inter';
+  font-size: 150%;
+  text-align: center;
+  line-height: 0;
+}
+
+.head {
+  color: white;
+  font-size: 300%;
+  padding: 0%;
+  font-family: 'Inter';
+}
+
+.subhead {
+  color: white;
+  font-size: 200%;
+  padding: 0%;
+  font-family: 'Inter';
+}
+
+.contentHeader {
+  padding-top: 20%;
+  padding-bottom: 30%;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.flex-container {
+  padding-left: 10%;
+  display: flex;
+}
+
+.flex-container > div {
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+
+}
+
+.links {
+  text-decoration: none;
+  color: #FF5A5F;
+}
