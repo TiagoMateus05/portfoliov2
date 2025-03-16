@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 /* Your existing CSS */
 @font-face {
@@ -9,9 +9,17 @@
   font-style: normal;
 }
 
+body {
+  background-color: #000000; /* Change this to your desired color */
+  color: #FFFFFF; /* Optional: Change the text color to ensure readability */
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web';
+}
+
 .default {
   color: white;
-  font-family: 'Inter';
+  font-family: 'Titillium Web';
   font-size: 150%;
   text-align: center;
   line-height: 0;
@@ -21,14 +29,14 @@
   color: white;
   font-size: 300%;
   padding: 0%;
-  font-family: 'Inter';
+  font-family: 'Titillium Web';
 }
 
 .subhead {
   color: white;
   font-size: 200%;
   padding: 0%;
-  font-family: 'Inter';
+  font-family: 'Titillium Web';
 }
 
 .contentHeader {
@@ -39,9 +47,18 @@
   text-align: center;
 }
 
+.about {
+  font-size: 60px;
+  font-family: 'Titillium Web';
+}
+
 .flex-container {
   padding-left: 10%;
+  padding-right: 20%;
   display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flex-container > div {
@@ -51,10 +68,93 @@
   text-align: left;
   line-height: normal;
   letter-spacing: normal;
-
 }
 
 .links {
   text-decoration: none;
   color: #FF5A5F;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.about-image {
+  max-width: 300%;
+  border-radius: 0.2cm;
+  height: auto;
+}
+
+.binary-background-container {
+  position: relative;
+  width: 100%;
+  height: 920px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.binary-background-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #FF5A5F;
+  border-radius: 5%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: #FF5A5F;
+  color: white;
+}
+
+.square {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid #FF5A5F;
+  border-radius: 5%;
+  opacity: 1;
+  animation: growAndFade 2s forwards;
+  pointer-events: none;
+}
+
+@keyframes growAndFade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
