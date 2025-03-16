@@ -1,19 +1,18 @@
 <template>
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
       <div class="navbar-container">
-        <a href="/" class="navbar-logo">MyLogo</a>
         <ul class="navbar-menu">
           <li class="navbar-item">
             <a href="/" class="navbar-link">Home</a>
           </li>
           <li class="navbar-item">
-            <a href="/about" class="navbar-link">About</a>
+            <a href="#about" class="navbar-link">About</a>
           </li>
           <li class="navbar-item">
-            <a href="/portfolio" class="navbar-link">Portfolio</a>
+            <a href="#studies" class="navbar-link">Studies</a>
           </li>
           <li class="navbar-item">
-            <a href="/contact" class="navbar-link">Contact</a>
+            <a href="#contacts" class="navbar-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -34,6 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
   }
   
   .navbar-logo {
@@ -44,15 +44,14 @@
   }
   
   .navbar-menu {
+    justify-content: center;
     list-style: none;
     display: flex;
     gap: 1rem;
     margin: 0;
     padding: 0;
   }
-  
-  .navbar-item {
-  }
+
   
   .navbar-link {
     color: white;
