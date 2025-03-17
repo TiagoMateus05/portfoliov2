@@ -106,7 +106,7 @@ useHead({
 const typedHeadText = ref("")
 const typedSubHeadText = ref("")
 const introText = "Hello, my name is Tiago Mateus"
-const subIntroText = "I'm a Computer Science and Engineer Student"
+const subIntroText = "I'm a Computer Science and Engineering Student"
 const isAtTop = ref(true)
 
 // assign a ref to the binary background container
