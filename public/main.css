@@ -114,7 +114,7 @@ body {
 .binary-background-container {
   position: relative;
   width: 100%;
-  height: 740px; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
 }

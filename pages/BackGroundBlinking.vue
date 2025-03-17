@@ -50,7 +50,7 @@ const blinkDown = (x, y) => {
       let g = 0;
       let b = 0;
       ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
-      pointsColor[y][x][0] = r - 1;
+      pointsColor[y][x][0] = r - 0.5;
       ctx.beginPath();
       ctx.arc(x * pointSize + pointSize / 2, y * pointSize + pointSize / 2, circleRadius, 0, Math.PI * 2);
       ctx.fill();

@@ -50,15 +50,24 @@
       <div class="storyline-container">
         <div class="storyline">
           <div class="storyline-item">
+            <h3>São João Estoril Highschool 2020-2023</h3>
+            <p>São João Estoril is where I studied Science and Technologies, a 3 year
+              preparation to join Instituto Superior Técnico later on.
+            </p>
+          </div>
+          <div class="storyline-item">
             <h3>Instituto Superior Técnico 2023-Present</h3>
             <p>In 2023 I started my education in Computer Science and Engeineering, at Instituto Superior Técnico, 
-              University of Lisbon, where I still am developing varius skills with school projects</p>
+              University of Lisbon, where I still am developing varius skills with school projects. While having a lot of
+              self learn, the key programming languages I develped where Python, C, C++, Java and Assembly RISC-V.
+            </p>
           </div>
           <div class="storyline-item">
             <h3>Web.Dev - Aerotec 2024-Present</h3>
             <p>I joined the Web.Dev project in search of learning and gaining experience with EJS, js and express, along studies
               HTML and CSS.
-              Currently I play a valuable role in the Aerotec Site developement</p>
+              Currently I play a valuable role in the Aerotec Site developement.
+            </p>
           </div>
         </div>
       </div>
@@ -131,7 +140,7 @@ const createSquares = (event) => {
   const rect = button.getBoundingClientRect();
   const buttonX = rect.left + window.scrollX;
   const buttonY = rect.top + window.scrollY;
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 2; i++) {
     setTimeout(() => {
       const square = document.createElement('div');
       square.classList.add('square');
@@ -154,7 +163,7 @@ const handleScroll = () => {
   const scrollPos = window.scrollY;
   
   // scrolling down past half: auto-scroll to About if not already done
-  if (scrollPos >= containerHeight / 2 && !autoScrolled.value) {
+  if (scrollPos >= containerHeight / 3 && !autoScrolled.value) {
     const aboutSection = document.getElementById('navbar');
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -162,7 +171,7 @@ const handleScroll = () => {
     }
   }
   // scrolling up back: auto-scroll to binary container if already scrolled down
-  else if (scrollPos < containerHeight / 2 && autoScrolled.value) {
+  else if (scrollPos < containerHeight / 3 && autoScrolled.value) {
     binaryContainer.value.scrollIntoView({ behavior: 'smooth', block: 'start' });
     autoScrolled.value = false;
   }
