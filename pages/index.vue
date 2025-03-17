@@ -90,6 +90,10 @@ import BackGroundBlinking from './BackGroundBlinking.vue';
 import NavBar from "./navBar.vue";
 import { useHead } from '#app'
 
+definePageMeta({
+  middleware: 'mobile-redirect'
+})
+
 useHead({
   title: 'Tiago Mateus',
   meta: [{ charset: 'UTF-8' }],
