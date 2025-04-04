@@ -74,8 +74,17 @@
     </div>
   </div>
   <div class="bottom-contacts" style="border-radius: 10px;">
-      <p id="contacts"class="contacts">Contacts</p>
-      <p class="default">mail: tiago.g.mateus@tecnico.ulisboa.pt</p>
+    <p id="contacts"class="contacts">Contacts</p>
+    <div class="skills-container" style="padding-bottom: 60px;">
+      <!-- filepath: c:\Users\tiago\Documents\portfoliov2\pages\index.vue -->
+      <a class="button" @click.prevent="copyEmail">
+        <img src="/email.png" style="width: 60px;">
+      </a>
+      <!-- Popup message -->
+      <transition name="fade">
+        <div v-if="showPopup" class="popup">Copied to clipboard</div>
+      </transition>
+      </div>
       <div class="skills-container" style="padding-bottom: 60px;">
         <a href="https://www.linkedin.com/in/tiago-mateus-2915532b7/"><img src="/linkedin-icon.png" style="width: 65px;"></a>
         <a href="https://github.com/TiagoMateus05"><img src="/github.png" style="width: 60px;"></a>
@@ -108,6 +117,8 @@ const typedSubHeadText = ref("")
 const introText = "Hello, my name is Tiago Mateus"
 const subIntroText = "I'm a Computer Science and Engineering Student"
 const isAtTop = ref(true)
+const email = "tiago.g.mateus@tecnico.ulisboa.pt"
+const showPopup = ref(false)
 
 // assign a ref to the binary background container
 const binaryContainer = ref(null)
@@ -178,6 +189,19 @@ const handleScroll = () => {
   else if (scrollPos < containerHeight / 3 && autoScrolled.value) {
     binaryContainer.value.scrollIntoView({ behavior: 'smooth', block: 'start' });
     autoScrolled.value = false;
+  }
+}
+
+const copyEmail = async () => {
+  try {
+    await navigator.clipboard.writeText(email)
+    showPopup.value = true
+    // Hide popup after 2 seconds
+    setTimeout(() => {
+      showPopup.value = false
+    }, 2000)
+  } catch (error) {
+    console.error("Copy failed", error)
   }
 }
 
