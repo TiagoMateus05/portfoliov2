@@ -34,7 +34,7 @@
         <a href="https://github.com/TiagoMateus05/FP23-proj2" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/SO24-25" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/45/1/c-language-logo-png_seeklogo-458623.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/ASA1-24" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/c-logo-png_seeklogo-272951.png" class="images-skill"></a>
-        <a href="#" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/java-logo-png_seeklogo-273556.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/PO24-25" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/java-logo-png_seeklogo-273556.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/KMeans" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/34/1/risc-v-logo-png_seeklogo-340273.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/javascript-js-logo-png_seeklogo-273557.png" class="images-skill"></a>
       </div>
