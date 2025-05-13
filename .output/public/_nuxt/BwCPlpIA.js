@@ -1,0 +1,1 @@
+import{_ as o,t,x as s,v as a}from"./CnMXcRGH.js";const n={class:"mobile-container"},r={__name:"mobile",setup(c){return(l,e)=>(a(),t("div",n,e[0]||(e[0]=[s("h1",null,"Mobile page is still under construction",-1)])))}},i=o(r,[["__scopeId","data-v-861f0772"]]);export{i as default};

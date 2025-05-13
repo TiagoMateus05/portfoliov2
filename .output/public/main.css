@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+/* Your existing CSS */
+@font-face {
+  font-family: 'Cascade Mono';
+  src: url('/fonts/CascadeMono.woff2') format('woff2'),
+       url('/fonts/CascadeMono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ensure smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000; /* Change this to your desired color */
+  color: #FFFFFF; /* Optional: Change the text color to ensure readability */
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web';
+}
+
+.default {
+  color: white;
+  font-family: 'Titillium Web';
+  font-size: 150%;
+  text-align: center;
+  line-height: 0;
+}
+
+.head {
+  color: white;
+  font-size: 300%;
+  padding: 0%;
+  font-family: 'Titillium Web';
+}
+
+.subhead {
+  color: white;
+  font-size: 200%;
+  padding: 0%;
+  font-family: 'Titillium Web';
+}
+
+.contentHeader {
+  padding-top: 20%;
+  padding-bottom: 30%;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.about {
+  font-size: 5em;
+  font-family: 'Titillium Web';
+  padding: 1cm;
+  height: auto;
+  position: relative; /* Ensure the rectangle is positioned relative to the about section */
+  z-index: 1;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  width: 200px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  background-color: #FF5A5F; /* Adjust the color as needed */
+  top: 60%; /* Adjust the top position as needed */
+  z-index: -1;
+  transform: translateY(-50%); /* Center the rectangle vertically */
+  transform: translateX(-90%);
+}
+
+
+
+.flex-container {
+  padding-left: 10%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container > div {
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.links {
+  text-decoration: none;
+  color: #FF5A5F;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.about-image {
+  max-width: 300%;
+  border-radius: 0.2cm;
+  height: auto;
+}
+
+.binary-background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.binary-background-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Remove the discrete class toggles so the inline transform takes effect */
+/*
+.binary-background-container.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: transform 1s;
+}
+
+.binary-background-container.scrolled {
+  transform: translateY(-100%);
+  transition: transform 1s ease-in-out;
+}
+*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #FF5A5F;
+  border-radius: 5%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.button:hover {
+  background-color: #FF5A5F;
+  color: white;
+}
+
+.square {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid #FF5A5F;
+  border-radius: 5%;
+  opacity: 1;
+  animation: growAndFade 2s forwards;
+  pointer-events: none;
+}
+
+@keyframes growAndFade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.images-container {
+  position: relative;
+  padding: 10px;
+  border: 2px solid #FF5A5F;
+  box-shadow: 0 0 10px #FF5A5F;
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.images-container:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 0 20px #FF5A5F; /* Stronger glow on hover */
+}
+
+.images-skill {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.skills {
+  font-size: 5em;
+  font-family: 'Titillium Web';
+  padding: 1cm;
+  height: auto;
+  position: relative; /* Ensure the rectangle is positioned relative to the about section */
+  z-index: 1;
+}
+
+.skills::after {
+  content: '';
+  position: absolute;
+  width: 200px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  background-color: #FF5A5F; /* Adjust the color as needed */
+  top: 60%; /* Adjust the top position as needed */
+  z-index: -1;
+  transform: translateY(-50%); /* Center the rectangle vertically */
+  transform: translateX(-90%);
+}
+
+.storyline-container {
+  position: relative;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-top: 50px;
+  padding-bottom: 20%;
+}
+
+.storyline {
+  position: relative;
+  border-left: 2px solid #FF5A5F;
+  padding-left: 20px;
+}
+
+.storyline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.storyline-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FF5A5F;
+  border-radius: 50%;
+}
+
+.default-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1cm;
+}
+
+.short-line {
+  width: 700px;         /* Adjust length as needed */
+  height: 2px;         /* Adjust thickness as needed */
+  background-color: #FF5A5F; /* Adjust color as needed */
+  margin-top: 10px;    /* Spacing between text and the line */
+}
+
+.bottom-contacts {
+  background-color: #333;
+  padding: 10px
+}
+
+.contacts {
+  font-size: 2em;
+  font-family: 'Titillium Web';
+  z-index: 1;
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 1;
+  z-index: 2000;
+  font-size: 14px;
+}
+
+/* Fade transition */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
+}

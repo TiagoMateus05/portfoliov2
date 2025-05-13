@@ -1,0 +1,1 @@
+import{N as i,n as t}from"./CnMXcRGH.js";const n=i((e,a)=>{{const o=navigator.userAgent||navigator.vendor;if(/android|iphone|ipad|ipod/i.test(o)&&e.path!=="/mobile")return t("/mobile")}});export{n as default};
