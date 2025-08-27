@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Add ref and your existing classes -->
     <div ref="binaryContainer" :class="['binary-background-container']">
       <BinaryBackground />
       <p :class="['contentHeader', { centered: isAtTop }]">

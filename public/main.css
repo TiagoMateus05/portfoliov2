@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
-/* Your existing CSS */
 @font-face {
   font-family: 'Cascade Mono';
   src: url('/fonts/CascadeMono.woff2') format('woff2'),
@@ -9,14 +8,14 @@
   font-style: normal;
 }
 
-/* Ensure smooth scrolling for anchor links */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #000000; /* Change this to your desired color */
-  color: #FFFFFF; /* Optional: Change the text color to ensure readability */
+  background-color: #000000;
+  color: #FFFFFF; 
   margin: 0;
   padding: 0;
   font-family: 'Titillium Web';
@@ -57,19 +56,19 @@ body {
   font-family: 'Titillium Web';
   padding: 1cm;
   height: auto;
-  position: relative; /* Ensure the rectangle is positioned relative to the about section */
+  position: relative; 
   z-index: 1;
 }
 
 .about::after {
   content: '';
   position: absolute;
-  width: 200px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  background-color: #FF5A5F; /* Adjust the color as needed */
-  top: 60%; /* Adjust the top position as needed */
+  width: 200px; 
+  height: 20px; 
+  background-color: #FF5A5F; 
+  top: 60%; 
   z-index: -1;
-  transform: translateY(-50%); /* Center the rectangle vertically */
+  transform: translateY(-50%); 
   transform: translateX(-90%);
 }
 
@@ -102,7 +101,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Adjust the width as needed */
+  width: 100%; 
 }
 
 .about-image {
@@ -114,7 +113,7 @@ body {
 .binary-background-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Adjust as needed */
+  height: 100vh; 
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
 }
@@ -126,23 +125,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
-/* Remove the discrete class toggles so the inline transform takes effect */
-/*
-.binary-background-container.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  transition: transform 1s;
-}
-
-.binary-background-container.scrolled {
-  transform: translateY(-100%);
-  transition: transform 1s ease-in-out;
-}
-*/
 
 .sticky {
   position: fixed;
@@ -214,19 +196,19 @@ body {
   padding: 10px;
   border: 2px solid #FF5A5F;
   box-shadow: 0 0 10px #FF5A5F;
-  border-radius: 10px; /* Rounded corners */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 10px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .images-container:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-  box-shadow: 0 0 20px #FF5A5F; /* Stronger glow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #FF5A5F; 
 }
 
 .images-skill {
   width: 100%;
   height: auto;
-  border-radius: 5px; /* Rounded corners for images */
+  border-radius: 5px; 
 }
 
 .skills {
@@ -234,19 +216,19 @@ body {
   font-family: 'Titillium Web';
   padding: 1cm;
   height: auto;
-  position: relative; /* Ensure the rectangle is positioned relative to the about section */
+  position: relative; 
   z-index: 1;
 }
 
 .skills::after {
   content: '';
   position: absolute;
-  width: 200px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  background-color: #FF5A5F; /* Adjust the color as needed */
-  top: 60%; /* Adjust the top position as needed */
+  width: 200px; 
+  height: 20px; 
+  background-color: #FF5A5F; 
+  top: 60%; 
   z-index: -1;
-  transform: translateY(-50%); /* Center the rectangle vertically */
+  transform: translateY(-50%); 
   transform: translateX(-90%);
 }
 
@@ -288,10 +270,10 @@ body {
 }
 
 .short-line {
-  width: 700px;         /* Adjust length as needed */
-  height: 2px;         /* Adjust thickness as needed */
-  background-color: #FF5A5F; /* Adjust color as needed */
-  margin-top: 10px;    /* Spacing between text and the line */
+  width: 700px;         
+  height: 2px;         
+  background-color: #FF5A5F; 
+  margin-top: 10px;    
 }
 
 .bottom-contacts {
