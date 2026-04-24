@@ -45,28 +45,28 @@
         <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/33/1/spring-logo-png_seeklogo-333113.png" class="images-skill"></a>
       </div>
 
-      <h2 id="studies" class="skills" style="padding-left: 70% ;">Studies</h2>
+      <h2 id="studies" class="skills" style="padding-left: 70% ;">Studies & Experience</h2>
       <div class="storyline-container">
         <div class="storyline">
-          <div class="storyline-item">
-            <h3>São João Estoril Highschool 2020-2023</h3>
-            <p>São João Estoril is where I studied Science and Technologies, a 3 year
-              preparation to join Instituto Superior Técnico later on.
-            </p>
-          </div>
-          <div class="storyline-item">
-            <h3>Instituto Superior Técnico 2023-Present</h3>
-            <p>In 2023 I started my education in Computer Science and Engeineering, at Instituto Superior Técnico, 
-              University of Lisbon, where I still am developing varius skills with school projects. While having a lot of
-              self learn, the key programming languages I develped where Python, C, C++, Java and Assembly RISC-V.
-            </p>
-          </div>
-          <div class="storyline-item">
-            <h3>Web.Dev - Aerotec 2024-Present</h3>
-            <p>I joined the Web.Dev project in search of learning and gaining experience with EJS, js and express, along studies
-              HTML and CSS.
-              Currently I play a valuable role in the Aerotec Site developement.
-            </p>
+          <div class="storyline-line" aria-hidden="true"></div>
+          <div
+            v-for="group in storylineGroups"
+            :key="group.period"
+            class="storyline-group"
+            :class="`storyline-group--${group.side}`"
+          >
+            <div class="storyline-node" aria-hidden="true"></div>
+            <div class="storyline-cards">
+              <div
+                v-for="item in group.items"
+                :key="`${item.title}-${group.period}`"
+                class="storyline-card"
+              >
+                <p class="storyline-period">{{ item.period }}</p>
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
 import BinaryBackground from "./BackGroudNumbers.vue";
 import BackGroundBlinking from './BackGroundBlinking.vue';
 import NavBar from "./navBar.vue";
@@ -118,6 +118,64 @@ const subIntroText = "I'm a Computer Science and Engineering Student"
 const isAtTop = ref(true)
 const email = "tiago.g.mateus@tecnico.ulisboa.pt"
 const showPopup = ref(false)
+
+const storylineItems = [
+  {
+    period: '2020-2023',
+    title: 'São João Estoril Highschool',
+    description: 'São João Estoril is where I studied Science and Technologies, a 3 year preparation to join Instituto Superior Técnico later on.'
+  },
+  {
+    period: '2023-Present',
+    title: 'Instituto Superior Técnico',
+    description: 'In 2023 I started my education in Computer Science and Engineering, at Instituto Superior Técnico, University of Lisbon, where I still am developing various skills with school projects. While having a lot of self learn, the key programming languages I developed were Python, C, C++, Java and Assembly RISC-V.'
+  },
+  {
+    period: '2024-2025',
+    title: 'Web.Dev - Aerotec',
+    description: 'I joined the Web.Dev project in search of learning and gaining experience with EJS, JS and Express, alongside studies in HTML and CSS. Currently I play a valuable role in the Aerotec Site development.'
+  },
+  {
+    period: '2025-Present',
+    title: 'Research Grant Owner @ SI - Instituto Superior Técnico',
+    description: 'Contributed to the optimization and modernization of internal services at Instituto Superior Técnico Lisboa, working on the design and implementation of improved processes and operational methodologies, to better enhance services performance and availability. Collaborated across multiple initiatives to enhance efficiency, reliability, and scalability, while supporting critical operations and large-scale activities. Led and contributed to automation and system improvement efforts, driving better resource management and overall service performance.'
+  },
+    {
+    period: '2025-Present',
+    title: 'NebIST - WebSite Department Coordinator',
+    description: 'My work in NebIST is focused on the development of the new website, worked in PHP and Next.js, where I gathered the requirements of different departments and managed the website development, ensuring it meets the needs of the entire organization.'
+  }
+  
+]
+
+const storylineGroups = computed(() => {
+  const groups = new Map()
+
+  for (const item of storylineItems) {
+    const groupKey = item.period.includes('Present') ? 'Present' : item.period
+
+    if (!groups.has(groupKey)) {
+      groups.set(groupKey, [])
+    }
+
+    groups.get(groupKey).push(item)
+  }
+
+  let branchIndex = 0
+
+  const branches = Array.from(groups.entries()).map(([period, items]) => {
+    const side = period === 'Present'
+      ? 'center'
+      : (branchIndex++ % 2 === 0 ? 'left' : 'right')
+
+    return { period, items, side }
+  })
+
+  return [
+    ...branches.filter((branch) => branch.side !== 'center'),
+    ...branches.filter((branch) => branch.side === 'center')
+  ]
+})
 
 // assign a ref to the binary background container
 const binaryContainer = ref(null)
