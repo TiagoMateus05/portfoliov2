@@ -92,6 +92,10 @@ body {
   letter-spacing: normal;
 }
 
+.flex-container > .about-text {
+  width: 50%;
+}
+
 .links {
   text-decoration: none;
   color: #FF5A5F;
@@ -192,6 +196,7 @@ body {
 }
 
 .images-container {
+  width: 10%;
   position: relative;
   padding: 10px;
   border: 2px solid #FF5A5F;
@@ -218,6 +223,14 @@ body {
   height: auto;
   position: relative; 
   z-index: 1;
+}
+
+.skills--left {
+  padding-left: 10cm;
+}
+
+.skills--right {
+  padding-left: 70%;
 }
 
 .skills::after {
@@ -371,7 +384,7 @@ body {
 }
 
 .short-line {
-  width: 700px;         
+  width: min(700px, 90%);
   height: 2px;         
   background-color: #FF5A5F; 
   margin-top: 10px;    
@@ -412,4 +425,100 @@ body {
 }
 .fade-enter-to, .fade-leave-from {
   opacity: 1;
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .head {
+    font-size: 200%;
+  }
+
+  .subhead {
+    font-size: 130%;
+  }
+
+  .contentHeader {
+    padding: 30vh 16px 0;
+  }
+
+  .default {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .about {
+    font-size: 3em;
+    padding: 0.6cm 16px;
+  }
+
+  .skills,
+  .skills--left,
+  .skills--right {
+    font-size: 2em;
+    padding: 0.6cm 16px;
+  }
+
+  .about::after,
+  .skills::after {
+    width: 120px;
+    height: 14px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .flex-container > div,
+  .flex-container > .about-text {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+
+  .default-line-container {
+    padding: 0 16px 1cm;
+  }
+
+  .skills-container {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 0 16px 14px;
+  }
+
+  .images-container {
+    width: 64px;
+  }
+
+  /* Single-column timeline with the line on the left */
+  .storyline-container {
+    padding: 30px 16px 60px;
+  }
+
+  .storyline-line {
+    left: 10px;
+  }
+
+  .storyline-group {
+    grid-template-columns: 20px 1fr;
+    column-gap: 12px;
+  }
+
+  .storyline-node {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .storyline-group--left .storyline-cards,
+  .storyline-group--right .storyline-cards,
+  .storyline-group--center .storyline-cards {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: stretch;
+    width: auto;
+    text-align: left;
+  }
 }

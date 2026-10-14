@@ -14,7 +14,7 @@
       <BackGroundBlinking />
       <h2 id="about" class="about" style="text-align: center; position: relative;">About</h2>
       <div class="flex-container default">
-        <div style="width: 50%;">I am a student at <a class="links" href="https://tecnico.ulisboa.pt/pt/"> Instituto Superior Técnico Lisboa</a>. 
+        <div class="about-text">I am a student at Instituto Superior Técnico Lisboa.
           I consider myself a team player, a problem solver, and someone eager to learn and grow. While I love coding, 
           I also enjoy dedicating time to other interests, such as being a scout, playing the guitar, and discovering new experiences."
         <br> <br>Wanna know more? Here is my CV! <br>
@@ -23,29 +23,29 @@
         <div class="image-container"> <img src="/Photo.png" class="about-image"></img></div>
       </div>
 
-      <h2 class="skills" style="padding-left: 10cm ;">Skills</h2>
+      <h2 class="skills skills--left">Skills</h2>
       <div class="default-line-container">
         <p class="default">You can see many skills that I am still improving and some projects with them</p>
         <div class="short-line"></div>
       </div>
 
       <div class="skills-container">
-        <a href="https://github.com/TiagoMateus05/FP23-proj2" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/SO24-25" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/45/1/c-language-logo-png_seeklogo-458623.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/ASA1-24" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/c-logo-png_seeklogo-272951.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/PO24-25" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/java-logo-png_seeklogo-273556.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/KMeans" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/34/1/risc-v-logo-png_seeklogo-340273.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/javascript-js-logo-png_seeklogo-273557.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/FP23-proj2" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/SO24-25" class="images-container"><img src="https://images.seeklogo.com/logo-png/45/1/c-language-logo-png_seeklogo-458623.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/ASA1-24" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/c-logo-png_seeklogo-272951.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/PO24-25" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/java-logo-png_seeklogo-273556.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/KMeans" class="images-container"><img src="https://images.seeklogo.com/logo-png/34/1/risc-v-logo-png_seeklogo-340273.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/javascript-js-logo-png_seeklogo-273557.png" class="images-skill"></a>
       </div>
       <div class="skills-container">
-        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/29/1/typescript-logo-png_seeklogo-298572.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/css3-logo-png_seeklogo-273017.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/27/1/vue-js-logo-png_seeklogo-274070.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container" style="width: 10%;"><img src="https://images.seeklogo.com/logo-png/33/1/spring-logo-png_seeklogo-333113.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container"><img src="https://images.seeklogo.com/logo-png/29/1/typescript-logo-png_seeklogo-298572.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container"><img src="https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/css3-logo-png_seeklogo-273017.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/vue-js-logo-png_seeklogo-274070.png" class="images-skill"></a>
+        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container"><img src="https://images.seeklogo.com/logo-png/33/1/spring-logo-png_seeklogo-333113.png" class="images-skill"></a>
       </div>
 
-      <h2 id="studies" class="skills" style="padding-left: 70% ;">Studies & Experience</h2>
+      <h2 id="studies" class="skills skills--right">Studies & Experience</h2>
       <div class="storyline-container">
         <div class="storyline">
           <div class="storyline-line" aria-hidden="true"></div>
@@ -98,10 +98,6 @@ import BackGroundBlinking from './BackGroundBlinking.vue';
 import NavBar from "./navBar.vue";
 import { useHead } from '#app'
 
-definePageMeta({
-  middleware: 'mobile-redirect'
-})
-
 useHead({
   title: 'Tiago Mateus',
   meta: [{ charset: 'UTF-8' }],
@@ -122,11 +118,12 @@ const showPopup = ref(false)
 const storylineItems = [
   {
     period: '2020-2023',
+  
     title: 'São João Estoril Highschool',
     description: 'São João Estoril is where I studied Science and Technologies, a 3 year preparation to join Instituto Superior Técnico later on.'
   },
   {
-    period: '2023-Present',
+    period: '2023-2026',
     title: 'Instituto Superior Técnico',
     description: 'In 2023 I started my education in Computer Science and Engineering, at Instituto Superior Técnico, University of Lisbon, where I still am developing various skills with school projects. While having a lot of self learn, the key programming languages I developed were Python, C, C++, Java and Assembly RISC-V.'
   },
@@ -136,12 +133,12 @@ const storylineItems = [
     description: 'I joined the Web.Dev project in search of learning and gaining experience with EJS, JS and Express, alongside studies in HTML and CSS. Currently I play a valuable role in the Aerotec Site development.'
   },
   {
-    period: '2025-Present',
+    period: '2025-2026',
     title: 'Research Grant Owner @ SI - Instituto Superior Técnico',
     description: 'Contributed to the optimization and modernization of internal services at Instituto Superior Técnico Lisboa, working on the design and implementation of improved processes and operational methodologies, to better enhance services performance and availability. Collaborated across multiple initiatives to enhance efficiency, reliability, and scalability, while supporting critical operations and large-scale activities. Led and contributed to automation and system improvement efforts, driving better resource management and overall service performance.'
   },
     {
-    period: '2025-Present',
+    period: '2025-2026',
     title: 'NebIST - WebSite Department Coordinator',
     description: 'My work in NebIST is focused on the development of the new website, worked in PHP and Next.js, where I gathered the requirements of different departments and managed the website development, ensuring it meets the needs of the entire organization.'
   }
