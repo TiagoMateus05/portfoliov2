@@ -141,6 +141,16 @@ const storylineItems = [
     period: '2025-2026',
     title: 'NebIST - WebSite Department Coordinator',
     description: 'My work in NebIST is focused on the development of the new website, worked in PHP and Next.js, where I gathered the requirements of different departments and managed the website development, ensuring it meets the needs of the entire organization.'
+  },
+    {
+    period: '2026-Present',
+    title: 'INESC-ID - Research Trainee',
+    description: 'Currently developing and researching in the theme Distributed, Parallel and Secure System, where I am working in projects that explore new technologies.'
+  },
+    {
+    period: '2026-Present',
+    title: 'INESC-ID - IT Trainee Grant Owner',
+    description: 'As an IT Trainee, I am responsible for the development and maintenance of both INESC-ID tools and infrastructures.'
   }
   
 ]
