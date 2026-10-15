@@ -100,8 +100,12 @@ import { useHead } from '#app'
 
 useHead({
   title: 'Tiago Mateus',
-  meta: [{ charset: 'UTF-8' }],
+  meta: [
+    { charset: 'UTF-8' },
+    { name: 'description', content: 'Tiago Mateus - Computer Science and Engineering student at Instituto Superior Técnico. Portfolio, experience and CV.' }
+  ],
   link: [
+    { rel: 'canonical', href: 'https://www.tiagogmateus.com/' },
     { rel: 'stylesheet', href: '/main.css', type: 'text/css' },
     { rel: 'icon', type: 'image/png', href: '/devicon.png' }
   ],
