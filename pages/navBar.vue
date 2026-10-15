@@ -6,13 +6,16 @@
             <a href="/" class="navbar-link">Home</a>
           </li>
           <li class="navbar-item">
-            <a href="#about" class="navbar-link">About</a>
+            <a href="/#about" class="navbar-link">About</a>
           </li>
           <li class="navbar-item">
-            <a href="#studies" class="navbar-link">Studies</a>
+            <a href="/#projects" class="navbar-link">Projects</a>
           </li>
           <li class="navbar-item">
-            <a href="#contacts" class="navbar-link">Contact</a>
+            <a href="/#studies" class="navbar-link">Studies</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/#contacts" class="navbar-link">Contact</a>
           </li>
         </ul>
       </div>

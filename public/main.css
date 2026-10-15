@@ -376,6 +376,37 @@ body {
   line-height: 1.55;
 }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 12% 50px;
+}
+
+.project-card {
+  width: min(760px, 100%);
+  padding: 24px 26px;
+  border-radius: 18px;
+  background: rgba(255, 90, 95, 0.06);
+  border: 1px solid rgba(255, 90, 95, 0.25);
+  box-shadow: 0 0 22px rgba(255, 90, 95, 0.08);
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.project-card p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
 .default-line-container {
   display: flex;
   flex-direction: column;
@@ -481,6 +512,14 @@ body {
 
   .default-line-container {
     padding: 0 16px 1cm;
+  }
+
+  .project-container {
+    padding: 0 16px 30px;
+  }
+
+  .project-card {
+    padding: 20px 18px;
   }
 
   .skills-container {

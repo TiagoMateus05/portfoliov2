@@ -23,25 +23,29 @@
         <div class="image-container"> <img src="/Photo.png" class="about-image"></img></div>
       </div>
 
+      <h2 id="projects" class="skills skills--right">Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <p class="storyline-period">Open-source · C · UEFI</p>
+          <h3>DASE - Disk Auditor and Secure Eraser</h3>
+          <p>A bootable UEFI tool, written in C with GNU-EFI, that securely wipes HDDs and NVMe SSDs without an operating system. It picks the right erase method for each disk and verifies every wipe.</p>
+          <div class="project-links">
+            <a class="button" href="/dase">Project page</a>
+            <a class="button" href="https://github.com/TiagoMateus05/DASE">GitHub</a>
+          </div>
+        </div>
+      </div>
+
       <h2 class="skills skills--left">Skills</h2>
       <div class="default-line-container">
-        <p class="default">You can see many skills that I am still improving and some projects with them</p>
+        <p class="default">Here are a few of the skills I have acquired over the years or projetcs I am currently working on.</p>
         <div class="short-line"></div>
       </div>
 
       <div class="skills-container">
-        <a href="https://github.com/TiagoMateus05/FP23-proj2" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/SO24-25" class="images-container"><img src="https://images.seeklogo.com/logo-png/45/1/c-language-logo-png_seeklogo-458623.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/ASA1-24" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/c-logo-png_seeklogo-272951.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/PO24-25" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/java-logo-png_seeklogo-273556.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/KMeans" class="images-container"><img src="https://images.seeklogo.com/logo-png/34/1/risc-v-logo-png_seeklogo-340273.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/javascript-js-logo-png_seeklogo-273557.png" class="images-skill"></a>
-      </div>
-      <div class="skills-container">
-        <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container"><img src="https://images.seeklogo.com/logo-png/29/1/typescript-logo-png_seeklogo-298572.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container"><img src="https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/css3-logo-png_seeklogo-273017.png" class="images-skill"></a>
-        <a href="https://github.com/TiagoMateus05/portfoliov2" class="images-container"><img src="https://images.seeklogo.com/logo-png/27/1/vue-js-logo-png_seeklogo-274070.png" class="images-skill"></a>
         <a href="https://github.com/TiagoMateus05/IMS-dei" class="images-container"><img src="https://images.seeklogo.com/logo-png/33/1/spring-logo-png_seeklogo-333113.png" class="images-skill"></a>
       </div>
 
